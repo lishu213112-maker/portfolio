@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <style>
+        body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+    font-family: arial,sans-serif;
+}
+.container{
+    text-align: center;
+    background: darkcyan;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0,0,0.2);
+}
+h1{
+    color: #333;
+    margin-bottom: 20px;
+    margin-left: 1220px;
+}
+.buttons{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #06353a;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover{
+    background: #009fb3;
+}
+#count{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+     </style>
+</head>
+<body>
+    <div class="container">
+    <h1 style="color: crimson;background-color: aqua;margin-right: 1220px;border:1px solid black;border-radius: 5px;">Counter</h1>
+    <div class="buttons">
+    <button id="increasebtn">+</button>
+       <p id="count">0</p>
+       <button id="decreasebtn">-</button>
+       </div>
+     </div>
+    
+    <script>
+        
+
+
+
+
+
+{
+let count=0;
+let counttext=document.getElementById("count");
+let increament=document.getElementById("increasebtn");
+let decreament=document.getElementById("decreasebtn");
+increament.addEventListener("click",function(){
+    count++;
+    counttext.textContent=count;
+});
+decreament.addEventListener("click",function(){
+    count--;
+    counttext.textContent=count;
+});
+}
+
+    </script>
+</body>
+</html>v
